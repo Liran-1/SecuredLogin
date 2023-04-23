@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/login_eTXT_passInput"
+        android:layout_alignEnd="@+id/login_BTN_enter"
+        android:layout_margin="4dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/login_IMG_audioLock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/padlock_locked" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/login_IMG_batteryLock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/padlock_locked" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/login_IMG_chargeLock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/padlock_locked" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/login_IMG_brightnessLock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/padlock_locked" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/login_IMG_contactLock"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/padlock_locked" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_eTXT_passInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_BTN_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login_eTXT_passInput"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/login_eTXT_passInput"
+        android:text="@string/enter" />
+
+    <TextView
+        android:id="@+id/login_LBL_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locked"
+        android:layout_below="@+id/login_eTXT_passInput"
+        android:layout_alignStart="@id/login_eTXT_passInput"
+        android:layout_margin="12dp"
+        android:textSize="40sp"
+        android:textColor="@color/red"
+        />
+
+
+</RelativeLayout>

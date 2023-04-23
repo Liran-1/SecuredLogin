@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Secured Login</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter">Enter</string>
+    <string name="locked">LOCKED</string>
+    <string name="unlocked">UNLOCKED</string>
+</resources>
